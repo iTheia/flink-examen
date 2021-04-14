@@ -5,10 +5,11 @@ import { router } from "../routes";
 
 export const app = express();
 
-const publicPath = join(__dirname, "../../", "public");
+export const publicPath = join(__dirname, "../", "public");
 
 app.use(json());
 app.use(urlencoded({ extended: true }));
+app.set("publicPath", publicPath);
 app.use(express.static(publicPath));
 app.use("/", express.static(publicPath));
 app.use("/api/v1", router);
