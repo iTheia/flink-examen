@@ -8,5 +8,5 @@ export const dev: IConfig = {
     process.env.DEV_ORIGIN !== undefined
       ? process.env.DEV_ORIGIN.split(",")
       : ["http://localhost:3000", "http://localhost:3001"],
-  host: "http://localhost:5000",
+  host: process.env.DEV_HOST || "http://localhost:5000",
 };
