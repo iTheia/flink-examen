@@ -1,4 +1,6 @@
 import { config } from "./config";
-import { app } from "./http";
+import { app, HTTPServer } from "./http";
 
-app.listen(config.port);
+const server = new HTTPServer(app);
+
+server.start(config.port);
