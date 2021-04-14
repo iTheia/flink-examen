@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Este es un examen de flink para medir mis conocimientos generales",
   "scripts": {
-    "server": "SET NODE_ENV=dev&nodemon ."
+    "server": "SET NODE_ENV=dev&nodemon .",
+    "problem:1": "ts-node ./src/components/problem-1/index.ts",
+    "problem:2": "ts-node ./src/components/problem-2/index.ts",
+    "problem:3": "ts-node ./src/components/problem-3/index.ts"
   },
   "keywords": [],
   "author": "Marlon Giovanni Martinez Herrera <martinez.ded@gmail.com>",
