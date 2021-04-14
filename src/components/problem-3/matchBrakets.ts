@@ -5,6 +5,8 @@ const map = {
 };
 
 export const matchBrakets = (string: string) => {
+  if (!string) return false;
+  if (typeof string !== "string") return false;
   const stack = [];
   for (let i = 0; i < string.length; i++) {
     if (Object.keys(map).includes(string[i])) {
