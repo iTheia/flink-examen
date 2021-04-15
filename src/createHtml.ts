@@ -48,6 +48,7 @@ const sismo = `<!DOCTYPE html>
     <script src="./static/js/index.js" defer></script>
   </head>
   <body>
+  por cuestiones de front solo dibuja hasta 300, el resto se pueden ver en la consola 
     <canvas id="myChart" style="height: 60vh"></canvas>
   </body>
 </html>

@@ -17,7 +17,8 @@ var chart = new Chart(ctx, {
 });
 
 socket.on("pushdata", (point) => {
-  if (chart.data.datasets[0].data.length < 100) {
+  console.log(point);
+  if (chart.data.datasets[0].data.length < 300) {
     chart.data.labels.push("");
     chart.data.datasets[0].data.push(point);
     chart.update();
