@@ -1,16 +1,19 @@
 {
   "name": "flink-test",
   "version": "1.0.0",
+  "author": "Marlon Giovanni Martinez Herrera <martinez.ded@gmail.com>",
   "description": "Este es un examen de flink para medir mis conocimientos generales",
   "scripts": {
     "server": "SET NODE_ENV=dev&nodemon .",
     "problem:1": "ts-node ./src/components/problem-1/log.ts",
     "problem:2": "ts-node ./src/components/problem-2/log.ts",
     "problem:3": "ts-node ./src/components/problem-3/log.ts",
-    "test": "mocha --require ts-node/register --watch-extensions ts 'src/**/*.spec.ts'"
+    "test": "mocha --require ts-node/register --watch-extensions ts 'src/**/*.spec.ts'",
+    "postinstall": "tsc && npm run make:files",
+    "make:files": "ts-node ./src/createHtml.ts",
+    "start": "node ./build/index.js"
   },
   "keywords": [],
-  "author": "Marlon Giovanni Martinez Herrera <martinez.ded@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "@types/axios": "^0.14.0",
