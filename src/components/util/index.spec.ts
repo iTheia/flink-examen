@@ -1,8 +1,6 @@
-import { should, expect } from "chai";
+import { expect } from "chai";
 import { genRandomNumber } from "./index";
 import "jasmine";
-
-should();
 
 describe("Verify random number generator", () => {
   it("generate a number betwen 1 and 10", () => {

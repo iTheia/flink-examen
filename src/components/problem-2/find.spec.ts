@@ -1,9 +1,8 @@
-import { expect, should } from "chai";
+import { expect } from "chai";
 import "jasmine";
 import { genRandomNumber } from "../util";
 import { makeMails } from "./util";
 import { recursive } from "./findWhitFilter";
-should();
 
 describe("Verify find filter", () => {
   it("Should return an array whit items or empty array if not found", () => {

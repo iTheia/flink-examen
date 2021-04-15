@@ -1,8 +1,7 @@
-import { should, expect } from "chai";
+import { expect } from "chai";
 import "jasmine";
 import { matchBrakets } from "./matchBrakets";
 
-should();
 describe("Verify matching brakets", () => {
   it("should return true for a balanced text", () => {
     const text = "([]) {()-()}";
