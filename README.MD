@@ -18,7 +18,7 @@
 	npm run problem:2
 	npm run problem:3
 ```
-<p>los logs se pueden editar en **/src/components/problema/log.ts** </p>
+<p>los logs se pueden editar en <strong>/src/components/problema/log.ts<strong> </p>
 </div>
 </li>
 <li>
