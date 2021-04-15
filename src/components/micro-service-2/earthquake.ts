@@ -1,20 +1,16 @@
 import { genRandomNumber } from "../util";
 
-let earthquake = false;
-
-const freq = [
-  { min: 10, max: 12 },
-  { min: 12, max: 19 },
-  { min: 20, max: 28 },
-  { min: 40, max: 44 },
-  { min: 45, max: 50 },
-  { min: 51, max: 70 },
-];
-
-let duration = 0;
-
-export function makeEarthquakePoint() {
+export function makeEarthquakePoint(
+  earthquake = false,
+  duration = 0,
+  freq = [{ min: 10, max: 0 }]
+) {
   try {
+    if (!duration) throw new Error("");
+    if (!freq) throw new Error("");
+    if (typeof earthquake !== "boolean") throw new Error("");
+    if (typeof freq !== "object") throw new Error("");
+    if (typeof duration !== "number") throw new Error("");
     if (!earthquake) {
       earthquake = genRandomNumber() > 9;
       throw new Error("");
