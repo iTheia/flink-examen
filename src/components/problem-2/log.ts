@@ -2,6 +2,8 @@ import { genRandomNumber } from "../util";
 import { recursive } from "./findWhitFilter";
 import { makeMails } from "./util";
 
-recursive(makeMails(genRandomNumber()), { email: ".net" });
-recursive(makeMails(genRandomNumber()), { name: "Jhon" });
-recursive(makeMails(genRandomNumber()), { email: ".com" });
+console.log(recursive(makeMails(genRandomNumber()), { email: ".net" }));
+console.log(recursive(makeMails(genRandomNumber()), { name: "A" }));
+console.log(
+  recursive(makeMails(genRandomNumber()), { email: ".com", name: "a" })
+);

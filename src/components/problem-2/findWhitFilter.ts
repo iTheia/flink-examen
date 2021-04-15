@@ -1,4 +1,12 @@
-export function recursive(array, filter) {
+export function recursive(array: any[], filter: Object) {
+  if (
+    !array ||
+    !filter ||
+    typeof array !== "object" ||
+    typeof filter !== "object"
+  )
+    return [];
+
   let index = 0;
   let deep_level = 0;
   let matched = [];
@@ -6,7 +14,13 @@ export function recursive(array, filter) {
   return matched;
 }
 
-export function recursive_match(array, filter, index, deep_level, matched) {
+export function recursive_match(
+  array: any[],
+  filter: Object,
+  index: number,
+  deep_level: number,
+  matched: any
+) {
   for (var property in array) {
     if (deep_level === 0) index++;
     const current = array[property];
@@ -23,6 +37,7 @@ export function recursive_match(array, filter, index, deep_level, matched) {
             children: lookup,
             parent: property,
             index,
+            current,
           });
         }
       }
