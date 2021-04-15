@@ -1,6 +1,6 @@
 import faker from "faker";
 
-interface Mail {
+export interface Mail {
   id: number;
   name: string;
   email: string;
@@ -10,6 +10,8 @@ interface Mail {
   };
 }
 export const makeMails = (n: number) => {
+  if (!n) return [];
+  if (typeof n !== "number") return [];
   const mails: Mail[] = [];
   for (let i = 0; i < n; i++) {
     mails.push({
