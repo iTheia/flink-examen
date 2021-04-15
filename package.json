@@ -11,8 +11,7 @@
     "test": "mocha --require ts-node/register --watch-extensions ts 'src/**/*.spec.ts'",
     "postinstall": "tsc && npm run make:files",
     "make:files": "ts-node ./src/createHtml.ts",
-    "start": "node ./build/index.js",
-    "build": "npm run postinstall"
+    "start": "node ./build/index.js"
   },
   "keywords": [],
   "license": "ISC",
