@@ -1,6 +1,6 @@
 ### Este es un examen de flink para medir mis conocimientos generales
 
-<a href="https://secret-brook-99851.herokuapp.com/">Proyecto hosteado</a>
+<a target="_blank" href="https://secret-brook-99851.herokuapp.com/">Proyecto hosteado</a>
 
 
 <h3>todos los ejercicios estan en este mismo repo, los cuales tienen sus propios test</h3>
