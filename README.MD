@@ -1,13 +1,15 @@
 ### Este es un examen de flink para medir mis conocimientos generales
 
-<a target="_blank" rel="noopener"href="https://secret-brook-99851.herokuapp.com/">Proyecto hosteado</a>
+<a target="_blank" rel="noopener" href="https://secret-brook-99851.herokuapp.com/">Proyecto hosteado</a>
 
 
 <a target="_blank" rel="noopener" href="https://hub.docker.com/repository/docker/itheia/flink-test">Proyecto dockerizado</a>
 
 
 <h3>Dokcer</h3>
+
 <p>el contenido del proyecto se encuentra</p>
+
 ```bash
 	cd root/flink-examen
 ```
